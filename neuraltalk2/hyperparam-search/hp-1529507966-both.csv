@@ -1,0 +1,36 @@
+NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION
+cnn_optim_beta,finetune_cnn_after,batch_size,val_images_use,optim_epsilon,input_encoding_size,losses_log_every,id,optim_beta,input_h5,rnn_size,cnn_proto,cnn_optim_alpha,language_eval,seed,optim,gpuid,cnn_model,drop_prob_lm,grad_clip,cnn_weight_decay,save_checkpoint_every,learning_rate_decay_every,csv_out,input_json,seq_per_img,cnn_learning_rate,preprotype,cnn_optim,max_iters,checkpoint_path,start_from,learning_rate,learning_rate_decay_start,backend,beam_size,optim_alpha
+0.95806490938091,-1,19,933,4.5883071160009e-08,241,25,1529507966-both,0.98401530940526,/scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.h5,350,model/VGG_ILSVRC_16_layers_deploy.prototxt,0.82657862470539,1,28019629,adam,1,model/VGG_ILSVRC_16_layers.caffemodel,0.34280185150021,1.0695590807583,0,5000,50000,/scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/hp/hp-1529507966-both.csv,/scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.json,5,3.8230124083768e-05,both,sgdm,30001,,,0.00087338215512181,-1,cudnn,3,0.55061592900866
+ , , , , , , , 
+ , , , , , , , 
+ , , , , , , , 
+ , , , , , , , 
+iteration, CIDEr, BLEU-1, BLEU-2, BLEU-3, BLEU-4, BLEU-AVG, ROUGE_L, METEOR, VAL_LOSS
+5000, 0.043927945559785, 0.48118419201971, 0.28385066886187, 0.1702148757996, 0.10011201050759, 0.25884043679719, 0.30009051418583, 0.19299784324134, 2.6013658681403
+10000, 0.046258859251116, 0.47833918760691, 0.27481317449492, 0.16455654804373, 0.099150902766955, 0.25421495322813, 0.29298436914342, 0.072398190045249, 2.7072737096333
+15000, 0.049088564269513, 0.50722325622614, 0.29807506794559, 0.18269716914175, 0.10938474582147, 0.27434505978374, 0.31317311923484, 0.27718555070981, 2.8333997630048
+20000, 0.047486021559478, 0.50089766606818, 0.2962146421481, 0.17939687938169, 0.1097047085789, 0.27155347404422, 0.3129709871893, 0.20014372040447, 2.9365312533624
+25000, 0.050995579786679, 0.49251307955976, 0.28951437550281, 0.17595274720937, 0.10459507503554, 0.26564381932687, 0.30711406812974, 0.10394841466487, 3.0146602815793
+ , , , , , , , 
+ , , , , , , , 
+ , , , , , , , 
+ , , , , , , , 
+ , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , 
+ , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , 
+ , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , 
+ , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , 
+ , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , 
+ , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , 
+ , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , 
+ , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , 
+ , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , 
+ , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , 
+NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION,NEW SESSION
+cnn_optim_beta,finetune_cnn_after,batch_size,val_images_use,optim_epsilon,input_encoding_size,losses_log_every,id,optim_beta,input_h5,rnn_size,cnn_proto,cnn_optim_alpha,language_eval,seed,optim,gpuid,cnn_model,drop_prob_lm,grad_clip,cnn_weight_decay,save_checkpoint_every,learning_rate_decay_every,csv_out,input_json,seq_per_img,cnn_learning_rate,preprotype,cnn_optim,max_iters,checkpoint_path,start_from,learning_rate,learning_rate_decay_start,backend,beam_size,optim_alpha
+0.91110289598056,-1,11,933,2.7828560726862e-08,251,25,1529507966-both,0.95505747908244,/scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.h5,349,model/VGG_ILSVRC_16_layers_deploy.prototxt,0.43760515751689,1,54579491,adagrad,1,model/VGG_ILSVRC_16_layers.caffemodel,0.53737943490243,3.2942311804472,0,5000,50000,/scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/hp/hp-1529507966-both.csv,/scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.json,5,6.8344665861087e-05,both,adam,30001,,,0.00053616402049555,-1,cudnn,2,0.56974020849571
+ , , , , , , , 
+ , , , , , , , 
+ , , , , , , , 
+ , , , , , , , 
+iteration, CIDEr, BLEU-1, BLEU-2, BLEU-3, BLEU-4, BLEU-AVG, ROUGE_L, METEOR, VAL_LOSS
+5000, 0.025710860657524, 0.449621130604, 0.23546086514067, 0.12291545899034, 0.060033102721986, 0.21700763936425, 0.26729310647414, 0.19585916238824, 3.7126232124512

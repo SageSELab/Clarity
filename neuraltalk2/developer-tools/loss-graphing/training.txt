@@ -1,0 +1,318 @@
+#note: both0 corresponds to the log file of the 'both' dataset from training attempt-02
+
+
+
+#changing just learning_rate_decay (start, every) 
+#gpu 0
+#both2.txt
+
+cd /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android;clear && /opt/torch/install/bin/th /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/train.lua -preprotype both -input_h5 /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.h5 -input_json /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.json -id 1529521904-both -gpuid 0 -language_eval 0 -rnn_size 256 -input_encoding_size 256 -max_iters 8000 -drop_prob_lm 0.6 -finetune_cnn_after -1 -optim adam -learning_rate 6.0E-4 -learning_rate_decay_start 150 -learning_rate_decay_every 500 -cnn_learning_rate 1.5E-5 -cnn_weight_decay 0 -val_images_use 933 -save_checkpoint_every 100 -save_cp 0 | tee /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/both2.txt
+
+
+
+
+#changing just cnn_learning_rate and cnn_weight_decay (no learning rate decay)
+#gpu 1
+#both3.txt
+
+cd /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android;clear && /opt/torch/install/bin/th /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/train.lua -preprotype both -input_h5 /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.h5 -input_json /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.json -id 1529521904-both -gpuid 1 -language_eval 0 -rnn_size 256 -input_encoding_size 256 -max_iters 8000 -drop_prob_lm 0.6 -finetune_cnn_after -1 -optim adam -learning_rate 6.0E-4 -learning_rate_decay_start -1 -learning_rate_decay_every 500 -cnn_learning_rate 1.5E-6 -cnn_weight_decay 0.0005 -val_images_use 933 -save_checkpoint_every 100 -save_cp 0 | tee /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/both3.txt
+
+
+
+
+#changing all of the above
+#gpu 2
+#both4.txt
+
+cd /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android;clear && /opt/torch/install/bin/th /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/train.lua -preprotype both -input_h5 /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.h5 -input_json /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.json -id 1529521904-both -gpuid 2 -language_eval 0 -rnn_size 256 -input_encoding_size 256 -max_iters 8000 -drop_prob_lm 0.6 -finetune_cnn_after -1 -optim adam -learning_rate 6.0E-4 -learning_rate_decay_start 150 -learning_rate_decay_every 500 -cnn_learning_rate 1.5E-6 -cnn_weight_decay 0.0005 -val_images_use 933 -save_checkpoint_every 100 -save_cp 0 | tee /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/both4.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#gpu 0
+#both5.txt
+
+cd /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android;clear && /opt/torch/install/bin/th /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/train.lua -preprotype both -input_h5 /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.h5 -input_json /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.json -id 1529521904-both -gpuid 0 -language_eval 0 -rnn_size 256 -input_encoding_size 256 -max_iters 4000 -drop_prob_lm 0.6 -finetune_cnn_after -1 -optim adam -learning_rate 1.0E-6 -learning_rate_decay_start 150 -learning_rate_decay_every 500 -cnn_learning_rate 1.5E-6 -cnn_weight_decay 0.0005 -val_images_use 933 -save_checkpoint_every 100 -save_cp 0 | tee /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/both5.txt
+
+
+
+
+#gpu 1
+#both6.txt
+
+cd /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android;clear && /opt/torch/install/bin/th /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/train.lua -preprotype both -input_h5 /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.h5 -input_json /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.json -id 1529521904-both -gpuid 1 -language_eval 0 -rnn_size 256 -input_encoding_size 256 -max_iters 4000 -drop_prob_lm 0.6 -finetune_cnn_after -1 -optim adam -learning_rate 1.0E-7 -learning_rate_decay_start 150 -learning_rate_decay_every 500 -cnn_learning_rate 1.5E-6 -cnn_weight_decay 0.0005 -val_images_use 933 -save_checkpoint_every 100 -save_cp 0 | tee /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/both6.txt
+
+
+
+
+
+
+
+
+#gpu 2
+#both7.txt
+
+cd /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android;clear && /opt/torch/install/bin/th /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/train.lua -preprotype both -input_h5 /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.h5 -input_json /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.json -id 1529521904-both -gpuid 2 -language_eval 0 -rnn_size 256 -input_encoding_size 256 -max_iters 4000 -drop_prob_lm 0.6 -finetune_cnn_after -1 -optim adam -learning_rate 1.0E-8 -learning_rate_decay_start 150 -learning_rate_decay_every 500 -cnn_learning_rate 1.5E-6 -cnn_weight_decay 0.0005 -val_images_use 933 -save_checkpoint_every 100 -save_cp 0 | tee /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/both7.txt
+
+
+
+
+
+
+
+#gpu 0
+#both8.txt
+
+cd /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android;clear && /opt/torch/install/bin/th /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/train.lua -preprotype both -input_h5 /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.h5 -input_json /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.json -id 1529521904-both -gpuid 0 -language_eval 0 -rnn_size 256 -input_encoding_size 256 -max_iters 4000 -drop_prob_lm 0.6 -finetune_cnn_after -1 -optim adam -learning_rate 1.0E-5 -learning_rate_decay_start 100 -learning_rate_decay_every 300 -cnn_learning_rate 1.5E-6 -cnn_weight_decay 0.0005 -val_images_use 933 -save_checkpoint_every 100 -save_cp 0 | tee /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/both8.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+#gpu 1
+#both9.txt
+
+cd /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android;clear && /opt/torch/install/bin/th /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/train.lua -preprotype both -input_h5 /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.h5 -input_json /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.json -id 1529521904-both -gpuid 1 -language_eval 0 -rnn_size 256 -input_encoding_size 256 -max_iters 4000 -drop_prob_lm 0.6 -finetune_cnn_after -1 -optim adam -learning_rate 1.0E-4 -learning_rate_decay_start 100 -learning_rate_decay_every 75 -cnn_learning_rate 1.5E-6 -cnn_weight_decay 0.0005 -val_images_use 933 -save_checkpoint_every 100 -save_cp 0 | tee /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/both9.txt
+
+
+
+
+
+
+#gpu 2
+#both10.txt
+
+cd /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android;clear && /opt/torch/install/bin/th /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/train.lua -preprotype both -input_h5 /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.h5 -input_json /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.json -id 1529521904-both -gpuid 2 -language_eval 0 -rnn_size 256 -input_encoding_size 256 -max_iters 4000 -drop_prob_lm 0.6 -finetune_cnn_after -1 -optim adam -learning_rate 1.0E-4 -learning_rate_decay_start 500 -learning_rate_decay_every 150 -cnn_learning_rate 1.5E-6 -cnn_weight_decay 0.0005 -val_images_use 933 -save_checkpoint_every 100 -save_cp 0 | tee /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/both10.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#gpu 0
+#both11.txt
+
+cd /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android;clear && /opt/torch/install/bin/th /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/train.lua -preprotype both -input_h5 /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.h5 -input_json /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.json -id 1529521904-both -gpuid 0 -language_eval 0 -rnn_size 256 -input_encoding_size 256 -max_iters 4000 -drop_prob_lm 0.6 -finetune_cnn_after -1 -optim adam -learning_rate 1.0E-4 -learning_rate_decay_start 900 -learning_rate_decay_every 500 -cnn_learning_rate 1.5E-6 -cnn_weight_decay 0.0005 -val_images_use 933 -save_checkpoint_every 100 -save_cp 0 | tee /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/both11.txt
+
+
+
+
+
+
+
+
+
+#gpu 1
+#both12.txt
+
+cd /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android;clear && /opt/torch/install/bin/th /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/train.lua -preprotype both -input_h5 /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.h5 -input_json /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.json -id 1529521904-both -gpuid 1 -language_eval 0 -rnn_size 256 -input_encoding_size 256 -max_iters 4000 -drop_prob_lm 0.6 -finetune_cnn_after -1 -optim adam -learning_rate 1.0E-4 -learning_rate_decay_start 1000 -learning_rate_decay_every 200 -cnn_learning_rate 1.5E-6 -cnn_weight_decay 0.0005 -val_images_use 933 -save_checkpoint_every 100 -save_cp 0 | tee /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/both12.txt
+
+
+
+
+
+
+
+
+
+
+
+#gpu 2
+#both13.txt
+
+cd /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android;clear && /opt/torch/install/bin/th /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/train.lua -preprotype both -input_h5 /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.h5 -input_json /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.json -id 1529521904-both -gpuid 2 -language_eval 0 -rnn_size 256 -input_encoding_size 256 -max_iters 4000 -drop_prob_lm 0.6 -finetune_cnn_after -1 -optim adam -learning_rate 1.0E-4 -learning_rate_decay_start 800 -learning_rate_decay_every 300 -cnn_learning_rate 1.5E-6 -cnn_weight_decay 0.0005 -val_images_use 933 -save_checkpoint_every 100 -save_cp 0 | tee /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/both13.txt
+
+
+
+
+
+
+
+
+
+
+
+#gpu 0
+#both14.txt
+#NOTE: for some reason, this was never executed
+#so there is no both14.txt anywhere
+
+
+cd /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android;clear && /opt/torch/install/bin/th /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/train.lua -preprotype both -input_h5 /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.h5 -input_json /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.json -id 1529521904-both -gpuid 0 -language_eval 0 -rnn_size 256 -input_encoding_size 256 -max_iters 4000 -drop_prob_lm 0.6 -finetune_cnn_after -1 -optim adam -learning_rate 1.0E-4 -learning_rate_decay_start 900 -learning_rate_decay_every 500 -cnn_learning_rate 1.5E-6 -cnn_weight_decay 0.0005 -val_images_use 933 -save_checkpoint_every 100 -save_cp 0 | tee /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/both14.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#gpu 0
+#both15.txt
+
+cd /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android;clear && /opt/torch/install/bin/th /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/train.lua -preprotype both -input_h5 /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.h5 -input_json /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.json -id 1529521904-both -gpuid 0 -language_eval 0 -rnn_size 256 -input_encoding_size 256 -max_iters 50000 -drop_prob_lm 0.6 -finetune_cnn_after -1 -optim adam -learning_rate 1.0E-4 -learning_rate_decay_start 900 -learning_rate_decay_every 500 -cnn_learning_rate 1.5E-6 -cnn_weight_decay 0.0005 -val_images_use 933 -save_checkpoint_every 100 -save_cp 0 | tee /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/both15.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#gpu 1
+#both16.txt
+
+cd /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android;clear && /opt/torch/install/bin/th /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/train.lua -preprotype both -input_h5 /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.h5 -input_json /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.json -id 1529521904-both -gpuid 1 -language_eval 0 -rnn_size 256 -input_encoding_size 256 -max_iters 50000 -drop_prob_lm 0.6 -finetune_cnn_after -1 -optim adam -learning_rate 1.0E-4 -learning_rate_decay_start 1500 -learning_rate_decay_every 700 -cnn_learning_rate 1.5E-6 -cnn_weight_decay 0.0005 -val_images_use 933 -save_checkpoint_every 100 -save_cp 0 | tee /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/both16.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#gpu 2
+#both17.txt
+
+cd /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android;clear && /opt/torch/install/bin/th /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/train.lua -preprotype both -input_h5 /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.h5 -input_json /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.json -id 1529521904-both -gpuid 2 -language_eval 0 -rnn_size 256 -input_encoding_size 256 -max_iters 50000 -drop_prob_lm 0.6 -finetune_cnn_after -1 -optim adam -learning_rate 1.0E-4 -learning_rate_decay_start 2000 -learning_rate_decay_every 600 -cnn_learning_rate 1.5E-6 -cnn_weight_decay 0.0005 -val_images_use 933 -save_checkpoint_every 100 -save_cp 0 | tee /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/both17.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#gpu 2
+#both18.txt (changeing cnn_learning_rate and learning_rate)
+
+cd /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android;clear && /opt/torch/install/bin/th /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/train.lua -preprotype both -input_h5 /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.h5 -input_json /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.json -id 1529521904-both -gpuid 2 -language_eval 0 -rnn_size 256 -input_encoding_size 256 -max_iters 8000 -drop_prob_lm 0.6 -finetune_cnn_after -1 -optim adam -learning_rate 1.0E-5 -learning_rate_decay_start 400 -learning_rate_decay_every 100 -cnn_learning_rate 1.5E-7 -cnn_weight_decay 0 -val_images_use 933 -save_checkpoint_every 200 -save_cp 0 | tee /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/both18.txt
+
+
+
+
+
+
+
+#gpu 1
+#both19.txt (changing just cnn_learning_rate)
+
+cd /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android;clear && /opt/torch/install/bin/th /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/train.lua -preprotype both -input_h5 /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.h5 -input_json /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.json -id 1529521904-both -gpuid 1 -language_eval 0 -rnn_size 256 -input_encoding_size 256 -max_iters 8000 -drop_prob_lm 0.6 -finetune_cnn_after -1 -optim adam -learning_rate 1.0E-4 -learning_rate_decay_start 400 -learning_rate_decay_every 100 -cnn_learning_rate 1.5E-7 -cnn_weight_decay 0 -val_images_use 933 -save_checkpoint_every 200 -save_cp 0 | tee /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/both19.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#gpu 2
+#both20.txt (changing just cnn_learning_rate AND setting finetuning to iteration 0)
+
+cd /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android;clear && /opt/torch/install/bin/th /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/train.lua -preprotype both -input_h5 /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.h5 -input_json /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.json -id 1529521904-both -gpuid 2 -language_eval 0 -rnn_size 256 -input_encoding_size 256 -max_iters 8000 -drop_prob_lm 0.6 -finetune_cnn_after 0 -optim adam -learning_rate 1.0E-4 -learning_rate_decay_start 500 -learning_rate_decay_every 200 -cnn_learning_rate 1.5E-6 -cnn_weight_decay 0 -val_images_use 933 -save_checkpoint_every 200 -save_cp 0 | tee /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/both20.txt
+
+
+
+
+
+
+
+#gpu 2
+#both21.txt (changing just cnn_learning_rate AND setting finetuning to iteration 0)
+
+cd /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android;clear && /opt/torch/install/bin/th /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/train.lua -preprotype both -input_h5 /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.h5 -input_json /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.json -id 1529521904-both -gpuid 2 -language_eval 0 -rnn_size 256 -input_encoding_size 256 -max_iters 8000 -drop_prob_lm 0.6 -finetune_cnn_after 0 -optim adam -learning_rate 1.0E-4 -learning_rate_decay_start 500 -learning_rate_decay_every 200 -cnn_learning_rate 1.5E-6 -cnn_weight_decay 0 -val_images_use 933 -save_checkpoint_every 200 -save_cp 0 | tee /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/both21.txt
+
+
+
+
+
+
+
+
+#gpu 2
+#both22.txt (making cnn learn rate higher AND setting finetuning to iteration 0)
+
+cd /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android;clear && /opt/torch/install/bin/th /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/train.lua -preprotype both -input_h5 /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.h5 -input_json /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/data-both.json -id 1529521904-both -gpuid 2 -language_eval 0 -rnn_size 256 -input_encoding_size 256 -max_iters 12000 -drop_prob_lm 0.6 -finetune_cnn_after 6000 -optim adam -learning_rate 1.0E-4 -learning_rate_decay_start 2500 -learning_rate_decay_every 500 -cnn_learning_rate 1.5E-4 -cnn_weight_decay 0 -val_images_use 933 -save_checkpoint_every 100 -save_cp 0 | tee /scratch/ayachnes/Clarity-Workspace/NeuralTalk2-Android/both22.txt
+

@@ -1,0 +1,17 @@
+the files in this directory are:
+
+ntk2-both-.json -> scores_finetune_both_test_13_3fc3a7b4b3f93b41add279cffc3b896e.json
+ntk2-high-.json -> scores_no_finetune_high_test_4_2d184b872cd8ea6cf35cd236a8eb5e76.json
+ntk2-low-.json  -> scores_finetune_low_test_125_9777a14790973852a480c96606109250.json
+
+md5 sums on these files (they were verified to be legitimate already)
+
+a4617ad3ea082808284d10705508461e  ntk2-both-.json
+2564f00eba3ddebfc52774f927c8faf4  ntk2-high-.json
+084f1d039dc0f5ae461f6bee5c8ecd5a  ntk2-low-.json
+
+
+
+a4617ad3ea082808284d10705508461e  scores-finetune-both-test/scores_finetune_both_test_13_3fc3a7b4b3f93b41add279cffc3b896e.json
+2564f00eba3ddebfc52774f927c8faf4  scores-no-finetune-high-test/scores_no_finetune_high_test_4_2d184b872cd8ea6cf35cd236a8eb5e76.json
+084f1d039dc0f5ae461f6bee5c8ecd5a  scores-finetune-low-test/scores_finetune_low_test_125_9777a14790973852a480c96606109250.json

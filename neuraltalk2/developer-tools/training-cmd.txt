@@ -1,0 +1,24 @@
+#See ./README.txt for more information about these commands
+
+#low (gpuid = 0)
+
+clear && java -jar /scratch/ayachnes/NeuralTalk2-Android/TW.jar /scratch/ayachnes/NeuralTalk2-Android/Data/ClarityJpegs /scratch/ayachnes/NeuralTalk2-Android/inputs /scratch/ayachnes/NeuralTalk2-Android/csv-data/MTResults /scratch/ayachnes/NeuralTalk2-Android/csv-data/TaggerResults /scratch/ayachnes/NeuralTalk2-Android/Data/ReDraw-Final-Cleaned /scratch/ayachnes/NeuralTalk2-Android /opt/anaconda3/bin/ /opt/torch/install/bin gpu 933 933 10 256 256 -1 0.6 -1 adam 0.0006 200000 12000 1.5E-05 0 933 2000 empty 1 low
+
+
+
+#high (gpuid = 1)
+
+clear && java -jar /scratch/ayachnes/NeuralTalk2-Android/TW.jar /scratch/ayachnes/NeuralTalk2-Android/Data/ClarityJpegs /scratch/ayachnes/NeuralTalk2-Android/inputs /scratch/ayachnes/NeuralTalk2-Android/csv-data/MTResults /scratch/ayachnes/NeuralTalk2-Android/csv-data/TaggerResults /scratch/ayachnes/NeuralTalk2-Android/Data/ReDraw-Final-Cleaned /scratch/ayachnes/NeuralTalk2-Android /opt/anaconda3/bin/ /opt/torch/install/bin gpu 933 933 10 256 256 -1 0.6 -1 adam 0.0006 200000 12000 1.5E-05 0 933 2000 empty 1 high
+
+
+
+#both (gpuid = 2)
+
+clear && java -jar /scratch/ayachnes/NeuralTalk2-Android/TW.jar /scratch/ayachnes/NeuralTalk2-Android/Data/ClarityJpegs /scratch/ayachnes/NeuralTalk2-Android/inputs /scratch/ayachnes/NeuralTalk2-Android/csv-data/MTResults /scratch/ayachnes/NeuralTalk2-Android/csv-data/TaggerResults /scratch/ayachnes/NeuralTalk2-Android/Data/ReDraw-Final-Cleaned /scratch/ayachnes/NeuralTalk2-Android /opt/anaconda3/bin/ /opt/torch/install/bin gpu 933 933 10 256 256 -1 0.6 -1 adam 0.0006 200000 12000 1.5E-05 0 933 2000 empty 1 both
+
+
+
+
+#both (CPU training)
+
+clear && java -jar /scratch/ayachnes/NeuralTalk2-Android/TW.jar /scratch/ayachnes/NeuralTalk2-Android/Data/ClarityJpegs /scratch/ayachnes/NeuralTalk2-Android/inputs /scratch/ayachnes/NeuralTalk2-Android/csv-data/MTResults /scratch/ayachnes/NeuralTalk2-Android/csv-data/TaggerResults /scratch/ayachnes/NeuralTalk2-Android/Data/ReDraw-Final-Cleaned /scratch/ayachnes/NeuralTalk2-Android /opt/anaconda3/bin/ /opt/torch/install/bin cpu 933 933 10 256 256 -1 0.6 -1 adam 0.0006 200000 12000 1.5E-05 0 933 2000 empty 1 both

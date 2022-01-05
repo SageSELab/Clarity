@@ -1,0 +1,16 @@
+/bin/
+/im2txt/$               
+/im2txt/bazel-im2txt   
+/im2txt/bin
+/im2txt/bazel-bin           
+       
+/im2txt/bazel-out       
+/im2txt/bazel-genfiles  
+/im2txt/bazel-testlogs  
+/im2txt/conda-meta  
+/im2txt/WORKSPACE
+/im2txt/model/*
+/im2txt/data/mscoco
+/im2txt/data/Clarity/*
+
+/nbproject/private/

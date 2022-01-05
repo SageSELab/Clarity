@@ -1,0 +1,1 @@
+These json files are to be put in the neuraltalk2/inputs directory before running the neuraltalk2 preprocessing script; this ensures that the input captions that the neuraltalk2 model gets are preprocessed in the same way as everything else.

@@ -1,0 +1,20 @@
+#See ./README.txt for more information about this command
+
+#my evaluate command (note: to do all 933 test images, do -num_images -1, and to copy all images over to the vis folder, do -dump_images 1)
+
+#be sure to replace model-1529005747-both.t7 with the name of your checkpoint file
+
+cd /scratch/ayachnes/NeuralTalk2-Android && /opt/torch/install/bin/th /scratch/ayachnes/NeuralTalk2-Android/eval.lua -model /scratch/ayachnes/NeuralTalk2-Android/model-1529939013-both.t7 -num_images -1 -dump_images 1
+
+
+
+
+#(note: to do all 933 test images, do -num_images -1, and to copy all images over to the ./vis folder as a nice viewable html, do -dump_images 1)
+
+#bg9
+
+/opt/torch/install/bin/th eval.lua -model ./checkpoints/model.t7 -num_images -1 -dump_images 1
+
+#hudson
+
+th eval.lua -model ./checkpoints/model.t7 -num_images -1 -dump_images 1

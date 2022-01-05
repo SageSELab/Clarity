@@ -1,0 +1,16 @@
+Hyperparameter,Default Value,Karpathy Value,Min,Max,Description
+rnn_size,256,,256,640, number of hidden nodes in each layer of the RNN
+input_encoding_size,256,,256,640, the encoding size of each token in the vocabulary and the image
+batch_size,16,100,16,150,number of images per batch
+beam_size,7,7,2,7,beam size used for sampling
+grad_clip,0.1,5,0,5,clip gradients at this value (should be lower than usual 5 because we normalize grads by both batch and seq_length)
+drop_prob_lm,0.5,,0.1,0.9, strength of dropout in the Language Model RNN (reduces overfitting); on the interval 0 to 1
+learning_rate,0.0004,,7E-05,0.01, the learning rate for the language model
+optim,adam,,N/A,N/A,"the gradient descent optimization algorithm to use for the language model; there are six choices: ""rmsprop"", ""sgd"", ""sgdm"", ""sgdmom"", ""adagrad"", and ""adam"""
+optim_alpha,0.8,,0.5,0.9," the alpha used for adagrad/rmsprop/momentum/adam for the language model; only used when optim is rmsprop, sgdm, sgdmom, or adam"
+optim_beta,0.999,,0.8,0.9, the beta used for adam for the language model; only used when optim is adam
+optim_epsilon,1E-08,,1E-08,1E-07, epsilon that goes into denominator for smoothing for the language model; only used when optim is rmsprop adagrad or adam
+cnn_optim, adam,,N/A,N/A," the gradient descent optimization algorithm to use for the CNN; there are three choices: ""sgd"" ""sgdm"" ""adam"""
+cnn_optim_alpha,0.8,,0.5,0.9, alpha for momentum of CNN; only used when cnn_optim is sgdm or adam
+cnn_optim_beta,0.999,,0.8,0.9, beta used for adam for the cnn; only when cnn_optim is adam
+cnn_learning_rate,1E-05,,1E-06,0.0001, learning rate for the CNN

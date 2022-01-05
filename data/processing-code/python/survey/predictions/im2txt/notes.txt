@@ -1,0 +1,19 @@
+the files in this directory are:
+
+im2txt-both-.json -> scores_bo2txtRC_test_22885_32bda482170b6220bd2e5969374f04fb.json
+im2txt-low-.json  -> scores_lo2txtRC_test_23727_75498fca34414994e6438f29171625c8.json
+im2txt-high-.json -> scores_hi2txtGP_test_10719_8b7071e88231bb927c82e35a4e0fa7aa.json
+
+
+
+md5 sums on these files (they were verified to be legitimate already)
+
+cc748bf43f59f76f022fff12caf7007f  im2txt-low-.json
+206aa345cfd8a7a44aae1a2f04080849  im2txt-high-.json
+f36ad4469e405c7bc277ff797debb63a  im2txt-both-.json
+
+
+cc748bf43f59f76f022fff12caf7007f  lo2txtRC-scores/scores-lo2txtRC-test/scores_lo2txtRC_test_23727_75498fca34414994e6438f29171625c8.json
+206aa345cfd8a7a44aae1a2f04080849  hi2txtGP-scores/scores-hi2txtGP-test/scores_hi2txtGP_test_10719_8b7071e88231bb927c82e35a4e0fa7aa.json
+f36ad4469e405c7bc277ff797debb63a  bo2txtRC-scores/scores-bo2txtRC-test/scores_bo2txtRC_test_22885_32bda482170b6220bd2e5969374f04fb.json
+

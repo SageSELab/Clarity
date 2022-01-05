@@ -1,0 +1,195 @@
+
+%%This is a standard LaTeX2e article document template. personal version 12/5/200%%
+\documentclass[11pt,twoside]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%packages%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{plain}
+
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amstext}
+\usepackage{multicol}
+\usepackage{amsthm}
+\usepackage[makeroom]{cancel}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{arrows.meta,arrows}
+\theoremstyle{theorem}
+\usetikzlibrary{arrows}
+\usetikzlibrary{datavisualization}
+\usepackage{amsxtra}  
+\usepackage{bm}  
+\usepackage{textcomp}
+\usepackage{standalone}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepackage[pdftex, breaklinks, linktocpage=true, bookmarksopen=true,bookmarksopenlevel=0,bookmarksnumbered=true]{hyperref}
+
+\hypersetup{
+pdftitle = {LDA Tables},
+pdfauthor = {\textcopyright\ Ali Yachnes},
+pdfcreator = {\LaTeX\ with package \flqq hyperref\frqq},
+colorlinks = {true}
+} 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%formatting%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\topmargin}{0 in}        %%%  This sets all the spacing stuff to use the page more
+\setlength{\oddsidemargin}{0in}    %%%  efficiently than the normal "article" setup would.
+\setlength{\evensidemargin}{0in}   %%%  It's OK to play with these some.
+\setlength{\textheight}{9in}     %%%
+\setlength{\textwidth}{6.5in}     %%%
+\setlength{\headsep}{0in}          %%%
+\setlength{\headheight}{0in}       %%%
+\renewcommand{\baselinestretch}{0.5}
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt} 
+\setlength{\abovedisplayskip}{3pt}
+\setlength{\belowdisplayskip}{3pt}
+%\setlength{\footskip}{0in}         %%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DeclareFontFamily{OT1}{rsfs}{}
+\DeclareFontShape{OT1}{rsfs}{n}{it}{<-> rsfs10}{}
+\DeclareMathAlphabet{\mathscr}{OT1}{rsfs}{n}{it}
+
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\Gal}{Gal}
+\DeclareMathOperator{\Syl}{Syl}
+\DeclareMathOperator{\Frob}{Frob}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\PGL}{PGL}
+\DeclareMathOperator{\PSL}{PSL}
+\DeclareMathOperator{\PSU}{PSU}
+\DeclareMathOperator{\PGU}{PGU}
+\DeclareMathOperator{\PCO}{PCO}
+\DeclareMathOperator{\Pro}{P}
+\DeclareMathOperator{\GU}{GU}
+\DeclareMathOperator{\GO}{GO}
+\DeclareMathOperator{\SO}{SO}
+\DeclareMathOperator{\SU}{SU}
+\DeclareMathOperator{\St}{St}
+\DeclareMathOperator{\SL}{SL}
+\DeclareMathOperator{\Sp}{Sp}
+\DeclareMathOperator{\Spin}{Spin}
+\DeclareMathOperator{\PSp}{PSp}
+\DeclareMathOperator{\PCSp}{PCSp}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\adj}{adj}
+\DeclareMathOperator{\Out}{Out}
+\DeclareMathOperator{\Orb}{Orb}
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\Stab}{Stab}
+\DeclareMathOperator{\Char}{char}
+\DeclareMathOperator{\Fix}{Fix}
+\DeclareMathOperator{\Inn}{Inn}
+\DeclareMathOperator{\Ind}{Ind}
+\DeclareMathOperator{\Irr}{Irr}
+\DeclareMathOperator{\IBr}{IBr}
+\DeclareMathOperator{\Bil}{Bil}
+\DeclareMathOperator{\disc}{disc}
+\DeclareMathOperator{\sgn}{sgn}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\im}{\mathrm{im}}
+\renewcommand{\O}{\mathscr{O}}
+\renewcommand{\a}{\mathfrak{a}}
+\newcommand{\p}{\mathfrak{p}}
+\newcommand{\Kbar}{\overline{K}}
+\newcommand{\X}{\mathcal{X}}
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{claim}[thm]{Claim}
+
+
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{rmk}[thm]{Remark}
+\newtheorem{example}[thm]{Example}
+\newtheorem{exercise}[thm]{Exercise}
+
+
+\begin{document}
+
+\begin{table}[]
+\caption{From `lda-high-15-500-200.topics`}
+\begin{tabular}{lllll}
+\hline
+Assigned Label & Top 7 Words \\ \hline \\
+ "sign up page" & applic screen display sign page use show \\ 
+ "app terms" & screen user provid app inform allow term  \\ 
+ "color options" & screen show app option color book differ  \\ 
+ "video game home" & screen page show app video game home  \\ 
+ "login or create acccount" & user screen allow account log creat app \\ 
+ "enter email and password" & user screen enter password email allow address  \\ 
+ "choose app language" & user screen allow choos access app languag  \\ 
+ "select image from a list" & user screen allow select view list imag   \\ 
+ "map search by location" & screen locat search map user show find  \\ 
+ "facebook login screen" & page screen app show login websit facebook   \\ 
+ &  &  \\ \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[]
+\caption{From `lda-low-25-500-200.topics`}
+\begin{tabular}{lllll}
+\hline
+Assigned Label & Top 7 Words \\ \hline \\
+ "app logo" & screen app text center bottom indic logo \\ 
+ "page button" & page button top center bottom side left   \\ 
+ "game start" & user click button game bottom view start \\ 
+ "select date" & avail date select one option theme present  \\ 
+ "wallpaper options" & set screen show option wallpap ad chang   \\ 
+ "top left back button" & button user screen left top corner back   \\ 
+ "camera button" & video imag photo pictur screen bottom camera  \\ 
+ "popup cancel button" & button popup cancel bottom screen right box   \\ 
+ "name field" & first second row third last name question   \\ 
+ "privacy policy banner" & titl just term blue banner privaci polici  \\ 
+ &  &  \\ \hline
+\end{tabular}
+\end{table}
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

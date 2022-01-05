@@ -1,0 +1,163 @@
+# This script contains the counts of each type of UI component as recorded during the running of the scripts in this directory
+# i.e. these counts correspond to the counts of UI component files after running the scripts
+
+
+Synthetic+Organic-Color-Perturbed-Training-Data-Split:
+
+CheckBox: 7762
+ImageButton: 3445
+EditText: 5743
+RadioButton: 8025
+ProgressBar: 17722
+Spinner: 8985
+SeekBar: 8694
+Switch: 8718
+ToggleButton: 8796
+RatingBar: 8835
+NumberPicker: 8714
+CheckedTextView: 6472
+Success: started with 101911 files and ended with 101911 files.
+
+
+
+
+
+
+
+Partitioned-Organic-Data-Split/Test/:
+
+CheckBox: 165
+ImageButton: 866
+EditText: 563
+Button: 1600
+Switch: 37
+ProgressBar: 39
+Spinner: 2
+SeekBar: 40
+RadioButton: 129
+ToggleButton: 26
+TextView: 9877
+RatingBar: 22
+ImageView: 5345
+NumberPicker: 38
+CheckedTextView: 337
+Success: started with 19086 files and ended with 19086 files.
+
+
+
+
+
+
+
+
+Partitioned-Organic-Data-Split/Validation: 
+
+CheckBox: 247
+ImageButton: 1306
+EditText: 846
+Button: 2400
+Switch: 56
+ProgressBar: 60
+Spinner: 3
+SeekBar: 61
+RadioButton: 194
+ToggleButton: 40
+CheckedTextView: 505
+RatingBar: 33
+ImageView: 7996
+NumberPicker: 57
+TextView: 14813
+Success: started with 28617 files and ended with 28617 files.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Partitioned-Organic-Data-Split/Training:
+
+CheckBox: 1238
+ImageButton: 6521
+EditText: 4230
+Button: 12007
+Switch: 280
+ProgressBar: 307
+Spinner: 15
+SeekBar: 304
+RadioButton: 970
+ToggleButton: 199
+TextView: 74087
+RatingBar: 164
+ImageView: 39983
+NumberPicker: 283
+CheckedTextView: 2528
+Success: started with 143116 files and ended with 143116 files.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Synthesized-Leaf-Nodes:
+
+CheckBox: 1000
+SeekBar: 1000
+RadioButton: 1004
+ProgressBar: 1968
+Spinner: 1000
+Switch: 1000
+ToggleButton: 1000
+RatingBar: 1000
+NumberPicker: 1000
+CheckedTextView: 1000
+Success: started with 10972 files and ended with 10972 files.
+
+
+
+
+
+
+
+
+
+
+
+After running ui_sampler.py
+
+Done sampling from perturbed data.
+
+
+Final training set count (187598 files): 
+     CheckBox: 5000
+     SeekBar: 5000
+     EditText: 5000
+     Button: 12007
+     Switch: 5000
+     ProgressBar: 5000
+     Spinner: 5000
+     ImageButton: 6521
+     RadioButton: 5000
+     ToggleButton: 5000
+     CheckedTextView: 5000
+     RatingBar: 5000
+     ImageView: 39983
+     NumberPicker: 5000
+     TextView: 74087
+

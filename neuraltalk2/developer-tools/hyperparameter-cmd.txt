@@ -1,0 +1,16 @@
+#See ./README.txt for more information about these commands
+
+
+#Hyperparameter search for 'both' dataset; gpuid 0
+
+clear && java -jar /scratch/ayachnes/NeuralTalk2-Android/HP.jar /scratch/ayachnes/NeuralTalk2-Android /opt/torch/install/bin 933 0 both
+
+
+#Hyperparameter search for 'both' dataset; gpuid 1
+
+clear && java -jar /scratch/ayachnes/NeuralTalk2-Android/HP.jar /scratch/ayachnes/NeuralTalk2-Android /opt/torch/install/bin 933 1 both
+
+
+#Hyperparameter search for 'both' dataset; gpuid 2
+
+clear && java -jar /scratch/ayachnes/NeuralTalk2-Android/HP.jar /scratch/ayachnes/NeuralTalk2-Android /opt/torch/install/bin 933 2 both
