@@ -7,5 +7,6 @@ You can find the documentation for each model in the following directories.
 * seq2seq
 * neuraltalk2
 * im2txt
+* sat
 * topic-modeling
 
