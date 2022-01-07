@@ -10,3 +10,4 @@ You can find the documentation for each model in the following directories.
 * sat
 * topic-modeling
 
+Trained model checkpoints from the paper can be downloaded [here](https://www.dropbox.com/sh/en5hy0v8tzy3z97/AAD3nS6fBhROQg7RHto4ASwWa?dl=0).
