@@ -1,0 +1,68 @@
+site_name: SWE 795 - Intersections of Deep Learning & Software Engineering 
+site_author: Kevin Moran
+copyright: '©2022 Kevin Moran'
+
+nav:
+  - Home: index.md
+ # - Schedule: schedule.md
+ # - Assignments: assignments.md
+ # - Hands On Sessions: hands-on-sessions.md
+ # - Syllabus: syllabus.md
+  - Resources: resources.md
+
+theme:
+  name: 'material'
+  logo: 'images/GMU-Logo.png'
+  favicon: 'images/GMU-Logo.png'
+  features:
+    - navigation.tabs
+  palette:
+
+    # Toggle Light Mode
+  - scheme: gmu
+    toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+
+    #Toggle Dark Mode
+  - scheme: slate
+    primary: 'green'
+    accent: 'light green'
+    toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+
+plugins:
+    - search
+    - encryptcontent:
+        title_prefix: '[Protected]'
+        summary: 'This Content is Password Protected'
+        placeholder: 'Click here to type the Password, then press Enter'
+        decryption_failure_message: 'Invalid Password'
+        encryption_info_message: 'This course content is password protected. Please enter the password provided by the instructor.'
+
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.details
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed
+  - pymdownx.keys
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - toc:
+      toc_depth: 3
+  - attr_list
+  - meta
+  - footnotes
+
+extra:
+  generator: false
